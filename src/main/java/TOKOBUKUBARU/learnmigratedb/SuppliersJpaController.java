@@ -28,6 +28,11 @@ public class SuppliersJpaController implements Serializable {
     }
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("TOKOBUKUBARU_learnmigratedb_jar_0.0.1-SNAPSHOTPU");
 
+    public SuppliersJpaController() {
+    }
+
+    
+    
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
